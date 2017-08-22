@@ -34,11 +34,13 @@ library(roxygen2)
 
 # 5 use roxygen to write the docs for the package
 
-setwd("~/Git/timesavers")
+library(devtools)
+setwd("~/git/timesavers")
 document()
 
 # 6 install the package
 
+library(devtools)
 setwd("~/git/")
 install("timesavers")
 
