@@ -9,8 +9,8 @@
 #' apa_p_value(0.487173)
 
 apa_p_value <- function(p){
-  p_formatted <- ifelse(p > 0.001, round(p, 3),
-                        ifelse(p < 0.001, "<.001"))
+  p_formatted <- ifelse(p > 0.001, paste("=", round(p, 3)),
+                        ifelse(p < 0.001, "< .001"))
   p_formatted <- gsub(pattern = "0.", replacement = ".", x = p_formatted, fixed = TRUE)
   p_formatted
 }
