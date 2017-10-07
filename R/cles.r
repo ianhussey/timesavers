@@ -14,6 +14,9 @@
 
 cles <- function(variable, group, data, value1 = 1, value2 = 0, runs = 10000) {
   
+  # Ensure data is a data frame (e.g., not a tbl_data)
+  data <- as.data.frame(data)
+  
   # Select the observations for group 1
   x <- data[data[[group]] == value1, variable]
   
@@ -29,5 +32,5 @@ cles <- function(variable, group, data, value1 = 1, value2 = 0, runs = 10000) {
   # Return proportion of TRUEs
   qxly <- mean(m)
   
-  return(qxly)
+  return(as.numeric(qxly))
 }
