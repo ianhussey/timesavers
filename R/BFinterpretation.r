@@ -2,11 +2,10 @@
 #'
 #' This function uses Wagenmakers' (2011) interpretation of Bayes Factors for the purpose of Bayesian hypothesis testing
 #' @param BF Bayes Factor to be interpreted.
-#' @keywords 
 #' @export
-#' @examples 
+#' @examples
 #' BFinterpretation(10.7)
-#' 
+#'
 
 BFinterpretation <- function(BF){
   BFtext <- ifelse(BF > 100, "extreme evidence in favour of the alternative hypothesis",

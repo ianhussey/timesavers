@@ -1,9 +1,9 @@
 Package: timesavers
 Title: Time saving functions
-Version: 0.1
+Version: 0.1.1
 Authors@R: person("Ian", "Hussey", email = "ian.hussey@ugent.be", role = c("aut", "cre"))
-Description: Functions I use to save time. multiplot allows you to combine multiple ggplot2 plots into one.
-Depends: R (>= 3.3.2)
+Description: Misc functions to aid data processing, analysis, and reporting.
+Depends: R (>= 3.3.3)
 License: GPLv3+
 Encoding: UTF-8
 LazyData: true

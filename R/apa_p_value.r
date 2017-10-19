@@ -2,9 +2,8 @@
 #'
 #' This function uses rounds p values using APA rules: No leading zero, rounded to three decimal places, below this shows as "< .001".
 #' @param p p value to be formatted
-#' @keywords 
 #' @export
-#' @examples 
+#' @examples
 #' apa_p_value(0.00000004)
 #' apa_p_value(0.487173)
 

@@ -3,9 +3,8 @@
 #' This function allows you to combine multiple ggplot2 plots into one.
 #' Code from https://hlplab.wordpress.com/2009/04/27/centering-several-variables/
 #' @param x Variable or dataframe to be centered.
-#' @keywords 
 #' @export
-#' @examples 
+#' @examples
 #' center_vars(my_data)
 
 center_vars = function(x) {
