@@ -1,6 +1,6 @@
 Package: timesavers
 Title: Time saving functions
-Version: 0.1.1
+Version: 0.1.2
 Authors@R: person("Ian", "Hussey", email = "ian.hussey@ugent.be", role = c("aut", "cre"))
 Description: Misc functions to aid data processing, analysis, and reporting.
 Depends: R (>= 3.3.3)
