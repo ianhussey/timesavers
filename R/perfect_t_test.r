@@ -74,9 +74,7 @@ perfect_t_test <- function(data, DV_name, IV_condition_a_name, IV_condition_b_na
 
   # round p values using APA rules
   t_test_p <- ifelse(t_test_p < 0.001, "< .001",
-                     ifelse(t_test_p < 0.01,
-                            paste("= ", rd(t_test_p, 3), sep = ""),  # rd() rounds, converts to string, and removes the leading 0.
-                            paste("= ", rd(t_test_p, 2), sep = "")))
+                     paste("= ", rd(t_test_p, 3), sep = ""))  # rd() rounds, converts to string, and removes the leading 0.
 
   # t test and d
   t_test_output <- paste(", t(", t_test_df, ") = ", t_test_est, ", p ", t_test_p, ", d = ", d_est, ", 95% CI [", d_ci_lower, ", ", d_ci_upper, "]. ", sep = "")
