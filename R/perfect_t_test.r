@@ -80,8 +80,8 @@ perfect_t_test <- function(data, DV_name, IV_condition_a_name, IV_condition_b_na
   t_test_output <- paste(", t(", t_test_df, ") = ", t_test_est, ", p ", t_test_p, ", d = ", d_est, ", 95% CI [", d_ci_lower, ", ", d_ci_upper, "]. ", sep = "")
 
   # descriptive stats
-  desc_a <- paste(IV_condition_a_name, " (N = ", a_n, ", M = ", a_m, ", SD = ", a_sd, ")", sep = "")
-  desc_b <- paste(IV_condition_b_name, " (N = ", b_n, ", M = ", b_m, ", SD = ", b_sd, ")", sep = "")
+  desc_a <- paste(IV_condition_a_name, " (n = ", a_n, ", M = ", a_m, ", SD = ", a_sd, ")", sep = "")
+  desc_b <- paste(IV_condition_b_name, " (n = ", b_n, ", M = ", b_m, ", SD = ", b_sd, ")", sep = "")
 
   # combine
   t_test_text <- paste(nhst,
