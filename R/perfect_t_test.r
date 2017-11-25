@@ -59,12 +59,12 @@ perfect_t_test <- function(data, DV_name, IV_condition_a_name, IV_condition_b_na
   d_interpretation  <- cohens_d$magnitude[[1]]
 
   ## descriptives
-  a_m   <- desc_stats %>% filter(IV == IV_condition_a_code_in_data) %>% select(mean) %>% as.numeric()  # IV adjusted here
-  b_m   <- desc_stats %>% filter(IV == IV_condition_b_code_in_data) %>% select(mean) %>% as.numeric()
-  a_sd  <- desc_stats %>% filter(IV == IV_condition_a_code_in_data) %>% select(sd) %>% as.numeric()
-  b_sd  <- desc_stats %>% filter(IV == IV_condition_b_code_in_data) %>% select(sd) %>% as.numeric()
-  a_n   <- desc_stats %>% filter(IV == IV_condition_a_code_in_data) %>% select(n) %>% as.numeric()
-  b_n   <- desc_stats %>% filter(IV == IV_condition_b_code_in_data) %>% select(n) %>% as.numeric()
+  a_m   <- desc_stats %>% filter(IV == IV_condition_a_code_in_data) %>% dplyr::select(mean) %>% as.numeric()  # IV adjusted here
+  b_m   <- desc_stats %>% filter(IV == IV_condition_b_code_in_data) %>% dplyr::select(mean) %>% as.numeric()
+  a_sd  <- desc_stats %>% filter(IV == IV_condition_a_code_in_data) %>% dplyr::select(sd)   %>% as.numeric()
+  b_sd  <- desc_stats %>% filter(IV == IV_condition_b_code_in_data) %>% dplyr::select(sd)   %>% as.numeric()
+  a_n   <- desc_stats %>% filter(IV == IV_condition_a_code_in_data) %>% dplyr::select(n)    %>% as.numeric()
+  b_n   <- desc_stats %>% filter(IV == IV_condition_b_code_in_data) %>% dplyr::select(n)    %>% as.numeric()
 
   # convert to natural language ---------------------------------------------
 
