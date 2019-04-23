@@ -35,9 +35,9 @@ perfect_t_test <- function(data, DV_name, IV_condition_a_name, IV_condition_b_na
                    data = data)
 
   # effect size
-  cohens_d <- cohen.d(DV ~ IV,
-                      paired = FALSE,
-                      data = data)
+  cohens_d <- effsize::cohen.d(DV ~ IV,
+                               paired = FALSE,
+                               data = data)
 
   desc_stats <- data %>%
     group_by(IV) %>%
