@@ -2,7 +2,8 @@
 #'
 #' Approximate conversion of Odds Ratios to Cohen's d values
 #' Using the method proposed by Hasselblad & Hedges (1995, Equation 5, p. 170): d = log(OR)*(sqrt(3)/pi).
-#' Sánchez-Meca, Marín-Martínez & Chacón-Moscoso's (2003) simulation study demonstrated this method to have adequate coverage and bias, although poorer than other methods. However, this method has the benefit of being simplest to implement, and is therefore useful for demonstrations purposes. For example, converting Odds Ratios to Cohen's d just for reader familiarity to illustrate the size of an effect. 
+#' Sánchez-Meca, Marín-Martínez & Chacón-Moscoso's (2003) simulation study demonstrated this method to have adequate coverage and bias, although poorer than other methods. However, this method has the benefit of being simplest to implement, and is therefore useful for demonstrations purposes. For example, converting Odds Ratios to Cohen's d just for reader familiarity to illustrate the size of an effect.
+#' Note that this approximation does not take the base rate of the behaviour into account, which can be particularly influential on the Odds Ratio when they are low (see Chen, Cohen & Chen, 2010 for conversion tables for low baserates). 
 #' @param OR The numeric (or vector of numeric) Odds Ratio to be converted. 
 #' @return Returns a numeric Cohen's d value. 
 #' @export
